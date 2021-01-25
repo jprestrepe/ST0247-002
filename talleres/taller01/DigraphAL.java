@@ -41,7 +41,13 @@ private ArrayList<LinkedList<Pair<Integer,Integer> Lista;
  	* @see <a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html"> Ver documentacion ArrayList </a>
 	*/
 	public ArrayList<Integer> getSuccessors(int vertex) {
-		
+	ArrayList<LinkedList<Pair<Integer, Integer> Destino = Lista[vertex];
+                ArrayList<Integer> Sucesor = new ArrayList<>();
+                if(Destino.isEmpty())return Sucesor; 
+                for(int i = 0; i < Destino.size(); i++){
+                   Sucesor.add(Destino.get(i).first);
+                }
+                return Sucesor;	
 	}
 
 	/**
@@ -51,7 +57,10 @@ private ArrayList<LinkedList<Pair<Integer,Integer> Lista;
 	* @return un entero con dicho peso
 	*/	
 	public int getWeight(int source, int destination) {
-		
+        ArrayList<LinkedList<Pair<Integer, Integer> Destino = Lista[source];
+                 for (int i = 0; i < Destino.size(); i++)
+                 if (Destino.get(i).first == destination)
+                 return Destino.get(i).second;
+                 return 0;
 	}
-
 }
