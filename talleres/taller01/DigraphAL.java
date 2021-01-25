@@ -28,7 +28,7 @@ private ArrayList<LinkedList<Pair<Integer,Integer> Lista;
 	*/
 	public void addArc(int source, int destination, int weight) {
 	ArrayList<LinkedList<Pair<Integer,Integer> UbicacionSource = Lista.get(source);
-	Pair<Integer,Integer> ParNuevo = new Pair(destination, weigth);
+	Pair<Integer,Integer> ParNuevo = new Pair(destination, weight);
         UbicacionSource.add(ParNuevo);
 	}
 
