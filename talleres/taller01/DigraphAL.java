@@ -6,7 +6,7 @@ import java.util.ArrayList;
  */
 public class DigraphAL extends Digraph {
 	
-private ArrayList<LinkedList<Pair<Integer,Integer>>> lista;
+private ArrayList<LinkedList<Pair<Integer,Integer> Lista;
 	
 	/**
 	* Constructor para el grafo dirigido
@@ -14,7 +14,9 @@ private ArrayList<LinkedList<Pair<Integer,Integer>>> lista;
 	*/
 	public DigraphAL(int size) {
 		super(size);
-		
+		Lista = new ArrayList<>();
+        for (int i = 0; i < size + 1; i++) {
+        Lista[i] = new LinkedList<Pair<Integer,Integer>>();
 	}
 
 	/**
@@ -25,7 +27,9 @@ private ArrayList<LinkedList<Pair<Integer,Integer>>> lista;
 	* @param weight el peso de la longitud entre source y destination
 	*/
 	public void addArc(int source, int destination, int weight) {
-		
+	ArrayList<LinkedList<Pair<Integer,Integer> UbicacionSource = Lista.get(source);
+	Pair<Integer,Integer> ParNuevo = new Pair(destination, weigth);
+        UbicacionSource.add(ParNuevo);
 	}
 
 	/**
