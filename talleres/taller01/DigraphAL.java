@@ -6,7 +6,8 @@ import java.util.ArrayList;
  */
 public class DigraphAL extends Digraph {
 	
-
+private ArrayList<LinkedList<Pair<Integer,Integer>>> lista;
+	
 	/**
 	* Constructor para el grafo dirigido
 	* @param vertices el numero de vertices que tendra el grafo dirigido
