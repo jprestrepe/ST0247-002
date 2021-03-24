@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 /**
  * Clase en la cual se implementan los metodos del Taller 5
- * @author Mauricio Toro, Camilo Paez, Juan Pablo Restrepo, Juan José Sánchez
+ * @author Mauricio Toro, Camilo Paez
  */
 public class Taller5 {
 
